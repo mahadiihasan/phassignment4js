@@ -1,4 +1,5 @@
-/* // problem 1
+// problem 1...........
+
 
 function mindGame(x){
 
@@ -11,11 +12,14 @@ function mindGame(x){
 
 }
 
-console.log(mindGame(33)); */
+console.log(mindGame(33));
 
-// problem 2
 
-/* function evenOdd(str){
+
+// problem 2...........
+
+
+function evenOdd(str){
 
     if(str.length % 2 == 0){
         console.log('even');
@@ -25,11 +29,15 @@ console.log(mindGame(33)); */
     }
 }
 
-evenOdd('Phero'); */
+evenOdd('Phero');
 
-// problem 3
 
-/* function isLGSeven(x){
+
+// problem 3...........
+
+
+
+function isLGSeven(x){
 
     let sub = x - 7;
 
@@ -44,11 +52,14 @@ evenOdd('Phero'); */
     }
 }
 
-console.log(isLGSeven(-15)); */
+console.log(isLGSeven(-15));
 
-// problem 4
 
-/* function findingBadData(arr){
+// problem 4...........
+
+
+
+function findingBadData(arr){
 
     let badData = 0;
 
@@ -71,9 +82,13 @@ console.log(isLGSeven(-15)); */
 
 }
 
-console.log(findingBadData([-4, -9, -5, -33, -55])); */
+console.log(findingBadData([-4, -9, -5, -33, -55]));
 
-// problem 5
+
+
+// problem 5.............
+
+
 
 function gemsToDiamond(x, y, z){
 
