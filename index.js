@@ -1,18 +1,29 @@
 // problem 1...........
 
+// this mindGame() function is for task 1
 
 function mindGame(x){
 
-    let multiply = x * 3;
-    let add = multiply + 10 ;
-    let div = add / 2;
-    let subtract = div - 5;
-    
-    return subtract;
+    if(Number.isInteger(x)){    //valid input check
 
+        let multiply = x * 3;
+        let add = multiply + 10 ;
+        let div = add / 2;
+        let subtract = div - 5;
+        
+        return subtract; 
+    }
+    else{
+
+        return "please enter an integer";
+
+    }
+
+    
 }
 
-console.log(mindGame(33));
+let result1 = mindGame(33); //calling function from here
+//console.log(result1);
 
 
 
@@ -21,15 +32,26 @@ console.log(mindGame(33));
 
 function evenOdd(str){
 
-    if(str.length % 2 == 0){
-        console.log('even');
+
+    if(typeof str === 'string'){  // valid input check here
+
+        if(str.length % 2 == 0){
+            return 'even';
+        }
+        else{
+            return 'odd';
+        }
+
     }
     else{
-        console.log('odd');
+        
+        return 'please enter a string';
     }
+    
 }
 
-evenOdd('Phero');
+let result2 = evenOdd('phero');
+//console.log(result2);
 
 
 
@@ -39,7 +61,9 @@ evenOdd('Phero');
 
 function isLGSeven(x){
 
-    let sub = x - 7;
+    if(Number.isInteger(x)){  //valid input check
+
+        let sub = x - 7;
 
     if(sub >=7){
 
@@ -50,9 +74,16 @@ function isLGSeven(x){
         return sub;
 
     }
+    }
+    else{
+
+        return 'please enter an integer';
+    }
+    
 }
 
-console.log(isLGSeven(-15));
+let result3 = isLGSeven(-15);
+//console.log(result3);
 
 
 // problem 4...........
@@ -60,6 +91,8 @@ console.log(isLGSeven(-15));
 
 
 function findingBadData(arr){
+
+    if(Array.isArray(arr)){  //checking valid input
 
     let badData = 0;
 
@@ -80,9 +113,16 @@ function findingBadData(arr){
 
     return badData;
 
+    }
+    else{
+
+        return 'please enter an array';
+    }    
+
 }
 
-console.log(findingBadData([-4, -9, -5, -33, -55]));
+let result4 = findingBadData([-4, -9, -5, -33, -55]);
+//console.log(result4);
 
 
 
@@ -92,25 +132,37 @@ console.log(findingBadData([-4, -9, -5, -33, -55]));
 
 function gemsToDiamond(x, y, z){
 
-    let friend1 = x * 21;
-    let friend2 = y * 32;
-    let friend3 = z * 43;
+    if(Number.isInteger(x) && Number.isInteger(y) && Number.isInteger(z)){ //check valid input
 
-    let totalDiamond = friend1 + friend2 + friend3;
+        let friend1 = x * 21;
+        let friend2 = y * 32;
+        let friend3 = z * 43;
+
+        let totalDiamond = friend1 + friend2 + friend3;
     
     if(totalDiamond > (1000*2)){
 
         let remainigDiamond = totalDiamond - 2000;
-        console.log(remainigDiamond);
+        return remainigDiamond;
     }
     else{
 
-        console.log(totalDiamond);
+        return totalDiamond;
     }
+
+    }
+    else{
+
+        return 'please enter 3 integer';
+    }
+
+    
 
 }
 
-gemsToDiamond(100, 5, 1);
+let result5 = gemsToDiamond(100, 5, 1);
+//let result5 = gemsToDiamond(100, 5, 'heelo');
+//console.log(result5);
 
 
 
